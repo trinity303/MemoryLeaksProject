@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hello"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/activity_main_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:textSize="25sp"
+            tools:text="Name"
+            />
+
+        <Button
+            android:id="@+id/activity_main_go_to_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to Details"
+            />
+
+        <Button
+            android:id="@+id/activity_main_open_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Open send data screen"
+            />
+
+        <Button
+            android:id="@+id/activity_main_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="calculate something"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/activity_details_calculate_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                tools:text="Calculate result"
+                />
+
+            <ProgressBar
+                android:id="@+id/activity_details_calculate_result_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
